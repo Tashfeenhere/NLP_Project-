@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Generated data and model artefacts
+data/raw/
+data/processed/
+data/app.db
+data/app.db-*
+training/model/
+training/train_log.txt
+evaluation/results/
+evaluation/errors/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+npm-debug.log*
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

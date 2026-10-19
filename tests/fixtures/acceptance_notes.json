@@ -1,0 +1,56 @@
+{
+  "description": "Three representative acceptance notes: the same notes exposed as sample buttons in the UI and printed by scripts/demo.py. Each expected record is the documented output the demo is checked against.",
+  "cases": [
+    {
+      "name": "knee_canonical",
+      "text": "Right knee pain rated 6 out of 10, constant for three weeks. Worse with climbing stairs. Rest helps. Knee flexion is limited to 95 degrees. Quadriceps weakness. Prescribed straight leg raises and clamshells.",
+      "fields": {
+        "body_part": "knee",
+        "laterality": "right",
+        "pain_severity": {"raw": "6 out of 10", "value": 6, "range": null},
+        "rom": [{"movement": "flexion", "value": 95, "unit": "deg", "quality": null}],
+        "triggers": ["climbing stairs"],
+        "relieving_factors": ["rest"],
+        "muscles": ["quadriceps"],
+        "findings": ["weakness"],
+        "exercises": ["straight leg raise", "clamshell"],
+        "duration": "3 weeks",
+        "frequency": "constant"
+      }
+    },
+    {
+      "name": "shoulder_reversed_rom",
+      "text": "Bilateral rotator cuff pain 7/10. Overhead reaching aggravates it. ROM: 90 deg external rotation, shoulder. Rotator cuff muscles weakness. Advised wall slides and band pull aparts.",
+      "fields": {
+        "body_part": "shoulder",
+        "laterality": "bilateral",
+        "pain_severity": {"raw": "7/10", "value": 7, "range": null},
+        "rom": [{"movement": "external rotation", "value": 90, "unit": "deg", "quality": null}],
+        "triggers": ["overhead reaching"],
+        "relieving_factors": [],
+        "muscles": ["rotator cuff"],
+        "findings": ["weakness"],
+        "exercises": ["wall slide", "band pull apart"],
+        "duration": null,
+        "frequency": null
+      }
+    },
+    {
+      "name": "lower_back_qualitative",
+      "text": "Lower back pain 4-5/10 for two months, intermittent. Aggravated by prolonged sitting, better with walking. Lumbar flexion is reduced. Gluteal tightness. Prescribed bird dog, dead bug and glute bridge.",
+      "fields": {
+        "body_part": "lower back",
+        "laterality": null,
+        "pain_severity": {"raw": "4-5/10", "value": 4, "range": [4, 5]},
+        "rom": [{"movement": "flexion", "value": null, "unit": null, "quality": "reduced"}],
+        "triggers": ["prolonged sitting"],
+        "relieving_factors": ["walking"],
+        "muscles": [],
+        "findings": ["tightness"],
+        "exercises": ["bird dog", "dead bug", "glute bridge"],
+        "duration": "2 months",
+        "frequency": "intermittent"
+      }
+    }
+  ]
+}
